@@ -51,6 +51,8 @@ stringObject = JSON.parse(stringObject);
 delete ourSecondObject.age;
 console.log(ourSecondObject);
 
+//----------------------------------------------------------------------
+
 //ARRAYS
 
 //returns the keys of an object
@@ -101,6 +103,8 @@ console.log(animalsArr.slice(1,3)); //returns ["cat", "bird"]
 animalsArr.splice(5, 2, 'zebra')
 console.log(animalsArr);
 
+//----------------------------------------------------------------------
+
 //Iterations
 
 //for...in
@@ -119,12 +123,16 @@ for (const index of animalsArr) {
     console.log(index);
 }
 
-//for...each
-//works only for arrays
-//What is the difference between for...of and for...each?
+//forEach()
+
 animalsArr.forEach(element => {
     console.log(element);
 });
+
+//What is the difference between for...of and for...each?
+//for...of is a loop syntax while forEach() is a method
+
+//----------------------------------------------------------------------
 
 //Functions
 
@@ -153,3 +161,5 @@ const myThirdFunc = (param) => {
 }
 
 //why we use the declaration way or the assignment way has to do with time management. Some parts of the website have to be ready to load and others not
+
+
