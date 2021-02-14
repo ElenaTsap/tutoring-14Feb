@@ -126,4 +126,30 @@ animalsArr.forEach(element => {
     console.log(element);
 });
 
+//Functions
 
+///function declarations
+//creates a function and wait for the user to call it
+//this way does not take any place in memory but might take more time to load since it is not ready
+
+function myFunction(param) {
+    //I am a comment
+    alert(param)
+}
+//call the function
+myFunction('Did you call me?');
+
+///function expressions - Functions declared as values
+//The function runs, assigns the outcome to the constant and waits for the result ready to be used.  
+//This way it takes space in the memory.
+
+const mySecFunc = function (param) {
+    alert(param);
+}
+
+//arrow functions
+const myThirdFunc = (param) => {
+    alert(param);
+}
+
+//why we use the declaration way or the assignment way has to do with time management. Some parts of the website have to be ready to load and others not
