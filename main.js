@@ -123,6 +123,7 @@ for (const index of animalsArr) {
     console.log(index);
 }
 
+
 //forEach()
 
 animalsArr.forEach(element => {
@@ -131,6 +132,13 @@ animalsArr.forEach(element => {
 
 //What is the difference between for...of and for...each?
 //for...of is a loop syntax while forEach() is a method
+//for...of can be used for any Iterable
+//most common Iterables are Strings and Arrays
+
+for (let char of "test") {
+    // triggers 4 times: once for each character
+    console.log( char ); // t, then e, then s, then t
+}
 
 //----------------------------------------------------------------------
 
