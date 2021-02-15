@@ -97,11 +97,14 @@ console.log(animalsArr);
 
 //arr.slice(firstNumber, secondNumber)
 //slice returns the values that start with the first index number and end before the second index number
+//IT DOES NOT CHANGE THE LENGTH OF THE ARRAY
 console.log(animalsArr.slice(1,3)); //returns ["cat", "bird"]
 
-//arr.splice(start[, deleteCount[, item1[, item2[, ...]]]])
-animalsArr.splice(5, 2, 'zebra')
-console.log(animalsArr);
+//arr.splice(start[, deleteCount, 'item(s) placed in the start position')
+//CHANGES THE LENGTH OF THE ARRAY
+//returns the removed items
+console.log(animalsArr.splice(2, 2, 'zebra', 'lulu'));
+console.log(animalsArr);//items that had index no 5 and 6 are removed and 'zebra was added' at the end
 
 //----------------------------------------------------------------------
 
@@ -144,7 +147,7 @@ for (let char of "test") {
 
 //Functions
 
-///function declarations
+///function declarations 
 //creates a function and wait for the user to call it
 //this way does not take any place in memory but might take more time to load since it is not ready
 
